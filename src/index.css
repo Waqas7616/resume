@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+  background-color: #041d35;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.main-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.para {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.logo {
+  font-size: clamp(1.125rem, 0.625rem + 2.5vw, 3.75rem);
+  ;
+}
+
+.button {
+  align-items: center;
+  background-color: #0788ff;
+  border: 2px solid #0788ff;
+  border-radius: 40px;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 13px 30px;
+  transition: all .35s ease;
+  text-transform: uppercase;
+  color: white;
+}
+
+.effect {
+  animation: rotate 25s linear infinite
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .slick-dots>span {
+  width: 50px !important;
+  display: inline-flex;
+} */
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width:1440px) {
+  .main-container {
+    width: 1420px;
+    margin: auto;
+  }
+}
